@@ -961,6 +961,22 @@ select:invalid{
             width: 90% !important;
             margin: 14px auto;
       }
+      .project1:hover,
+      .project2:hover,
+      .project3:hover,
+      .project4:hover,
+      .project5:hover,
+      .project6:hover,
+      .project7:hover,
+      .project8:hover{
+      transform: scale(1);
+      }
+      .cursor{
+            display: none;
+      }
+      .cursor-follower{
+            display: none;
+      }
       .image_div{
             flex-direction: column;
             align-items: center;
