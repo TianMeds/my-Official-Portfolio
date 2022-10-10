@@ -20,4 +20,8 @@
 <br>
 
 <h3 align="center">Preview</h3>
-<img align="center" src=" />
+<h4> Landing Page </h4>
+<img align="center" src="https://raw.githubusercontent.com/TianMeds/my-Official-Portfolio/main/img/HomeScreen.png" />
+<img align="center" src="https://raw.githubusercontent.com/TianMeds/my-Official-Portfolio/main/img/About%20Section.png" />
+<img align="center" src="https://github.com/TianMeds/my-Official-Portfolio/blob/main/img/ProjectSection.png" />
+<img align="center" src="https://raw.githubusercontent.com/TianMeds/my-Official-Portfolio/main/img/Contact%20Section.png" />
