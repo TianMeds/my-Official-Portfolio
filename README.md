@@ -7,7 +7,7 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
-    <h3>Framework and Libraries</h3>
+<h3>Framework and Libraries</h3>
     <li>Animation on Scroll (AOS)</li>
     <li>Wow.JS</li>
     <li>t.min.js(jQuery)</li>
