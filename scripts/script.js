@@ -170,6 +170,36 @@ $(document).on("click", ".menu-close", function () {
                 cursor.removeClass("active");
                 follower.removeClass("active");
             });
+
+            $(".row .project9").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".row .project9").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+
+            $(".row .project10").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".row .project10").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+
+            $(".row .project11").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".row .project11").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
     
             let image = document.querySelector('.image_div');
             image.addEventListener('wheel',(evnt) => {
