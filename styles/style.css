@@ -319,7 +319,7 @@ ul{
 .hero-content h1{
       color: var(--accent-color);
 }
-.cursor {
+.cursor, .cursors {
       position: absolute;
       background: white;
       width: 10px;
@@ -348,17 +348,33 @@ ul{
       border-radius: 100%;
       opacity: 0;
   }
+   
+  .cursors::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-image: url("/img/Cursors.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 100%;
+      opacity: 0;
+  }
   
-  .cursor.active {
+  .cursor.active, .cursors.active {
       opacity: 1;
       transform: scale(12);
   }
   
-  .cursor.active::before {
+  .cursor.active::before, .cursors.active::before{
       opacity: 1;
   }
   
-  .cursor-follower {
+  .cursor-follower, .cursor-followers {
       position: absolute;
       background: rgba(255, 255, 255, 0.1);
       width: 40px;
@@ -409,6 +425,7 @@ h6 {
 .project {
       height: 500px;
 }
+.cert,
 .project1:hover,
 .project2:hover,
 .project3:hover,
@@ -424,6 +441,7 @@ h6 {
       transform: scale(1.2);
       filter: grayscale(0);
 }
+.cert,
 .project1::after,
 .project2::after,
 .project3::after,
@@ -888,6 +906,46 @@ h6 {
 td{
       color: var(--main-color);
 }
+.cert{
+      color: var(--main-color);
+}
+.cert:hover{
+      color: var(--main-color);
+      text-decoration: none;
+}
+.cert::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .cert:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+#view{
+      max-width:150px;
+      margin-left: 10px;
+      padding: 20px 30px;
+      background: transparent;
+      color: #dfdfdf;
+      font-size: 14px;
+      letter-spacing: 2px;
+      border: 3px solid #dfdfdf;
+}
+
+#view:hover {
+      background: #dfdfdf;
+      color: #101010;
+      text-decoration: none;
+}
 
 
 
@@ -957,7 +1015,7 @@ select:invalid{
       color: black;
   }
 
-#send {
+#send{
       max-width:150px;
       margin-left: 40px;
       padding: 20px 30px;
@@ -998,7 +1056,7 @@ select:invalid{
 }
 @media(max-width: 1024px){
       
-      .project1::after, .project2::after, .project3::after, .project4::after, 
+      .cert::after,.project1::after, .project2::after, .project3::after, .project4::after, 
       .project5::after, .project6::after, .project7::after, .project8::after, 
       .project9::after,.project10::after, .project11::after{
             display: none;
@@ -1043,6 +1101,7 @@ select:invalid{
             width: 90% !important;
             margin: 14px auto;
       }
+      .cert:hover,
       .project1:hover,
       .project2:hover,
       .project3:hover,
@@ -1106,6 +1165,7 @@ select:invalid{
       select:invalid{
            font-size: 12px;
       }
+      .cert,
       .project1,
       .project2,
       .project3,

@@ -92,6 +92,8 @@ $(document).on("click", ".menu-close", function () {
                 }
             });
 
+            
+
             $(document).on("mousemove", function(e) {
                 mouseX = e.pageX;
                 mouseY = e.pageY;
@@ -201,6 +203,52 @@ $(document).on("click", ".menu-close", function () {
                 follower.removeClass("active");
             });
     
+
+            var cursors = $(".cursors"),
+                        followers = $(".cursor-followers");
+
+                var posX = 0,
+                    posY = 0,
+                    mouseX = 0,
+                    mouseY = 0;
+
+                TweenMax.to({}, 0.016, {
+                    repeat: -1,
+                    onRepeat: function() {
+                        posX += (mouseX - posX) / 9;
+                        posY += (mouseY - posY) / 9;
+
+                        TweenMax.set(followers, {
+                            css: {
+                                left: posX - 20,
+                                top: posY - 20
+                            }
+                        });
+
+                        TweenMax.set(cursors, {
+                            css: {
+                                left: mouseX,
+                                top: mouseY
+                            }
+                        });
+                    }
+                });
+
+                $(document).on("mousemove", function(e) {
+                    mouseX = e.pageX;
+                    mouseY = e.pageY;
+                });
+
+            $(".award-body .cert").on("mouseenter", function() {
+                cursors.addClass("active");
+                followers.addClass("active");
+            });
+
+            $(".award-body .cert").on("mouseleave", function() {
+                cursors.removeClass("active");
+                followers.removeClass("active");
+            });
+
             let image = document.querySelector('.image_div');
             image.addEventListener('wheel',(evnt) => {
                 evnt.preventDefault();
