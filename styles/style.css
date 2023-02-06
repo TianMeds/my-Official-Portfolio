@@ -34,7 +34,24 @@ ul{
       width: 100%;
       height: 50px;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #222222; 
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8eef1; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 /*--------------- VARIABLE CSS --------------- */
 :root{
 
