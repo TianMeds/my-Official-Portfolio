@@ -202,6 +202,16 @@ $(document).on("click", ".menu-close", function () {
                 cursor.removeClass("active");
                 follower.removeClass("active");
             });
+
+            $(".row .project12").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $(".row .project12").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
     
 
             var cursors = $(".cursors"),
