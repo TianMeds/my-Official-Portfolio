@@ -934,6 +934,38 @@ h6 {
       font-size: 13px;
       color: #717982;
 }
+#blog{
+      color: var(--main-color);
+}
+#blog-btn{
+      color: var(--main-color);
+}
+#blog-btn h4{
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+}
+#blog-btn h4::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom:0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#blog-btn h4:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+}
+#blog-btn ion-icon{
+      font-size: 16px;
+      position: relative;
+      top: 2px;
+}
 .service{
       padding-top: 20px;
       color: var(--main-color);
