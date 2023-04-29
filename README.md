@@ -1,5 +1,5 @@
 <h1 align="center"><b>Hello My name is Christian this is my Official Website 👋 <b></h1>
-<h1 align="center"><a href='https://tianmeds.me'>tianmeds.me</a></h1>
+<h1 align="center"><a href='https://tianmeds.live'>tianmeds.live</a></h1>
 <p align="center">This is my newest and official website portfolio.</p>
 <br>
 <h2>Tech Stack</h2>
