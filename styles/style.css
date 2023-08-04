@@ -454,7 +454,8 @@ h6 {
 .project9:hover,
 .project10:hover,
 .project11:hover,
-.project12:hover{
+.project12:hover,
+.project13:hover{
       opacity: 0.8;
       transform: scale(1.2);
       filter: grayscale(0);
@@ -471,7 +472,9 @@ h6 {
 .project9::after,
 .project10::after,
 .project11::after,
-.project11::after{
+.project11::after,
+.project12::after,
+.project13::after{
       transform: translateX(-1.75rem);
 }
 
@@ -745,6 +748,29 @@ h6 {
 
 .project12::after {
       content: "Weather Application.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 80%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+.project13 {
+      background: url(https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/HomeCity%20Mockup.png) no-repeat 50% 50%;
+      background-size: cover;
+      opacity: 0.8;
+      transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+      transform-origin: 90% center;
+      filter: grayscale(100%);
+}
+
+.project13::after {
+      content: "Homecity.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -1132,7 +1158,7 @@ select:invalid{
       
       .cert::after,.project1::after, .project2::after, .project3::after, .project4::after, 
       .project5::after, .project6::after, .project7::after, .project8::after, 
-      .project9::after,.project10::after, .project11::after{
+      .project9::after,.project10::after, .project11::after, .project12::after, .project13::after{
             display: none;
       }
       .project {
@@ -1186,7 +1212,9 @@ select:invalid{
       .project8:hover,
       .project9:hover,
       .project10:hover,
-      .project11:hover{
+      .project11:hover,
+      .project12:hover,
+      .project13:hover{
       transform: scale(1);
       }
       .cursor{
@@ -1250,7 +1278,9 @@ select:invalid{
       .project8,
       .project9,
       .project10,
-      .project11{
+      .project11,
+      .project12,
+      .project13{
             filter: grayscale(0);
       }
       .box{
